@@ -1,0 +1,4 @@
+<select [(ngModel)]="selectedHouse" (change)="onHouseChange()" class="form-control">
+  <option value="">Select House</option>
+  <option *ngFor="let house of houses" [value]="house">{{ house }}</option>
+</select>

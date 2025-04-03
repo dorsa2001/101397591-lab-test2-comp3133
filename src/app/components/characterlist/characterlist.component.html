@@ -1,0 +1,9 @@
+<div class="card-container">
+  <div class="card" *ngFor="let character of characters">
+    <img [src]="character.image || 'https://via.placeholder.com/200x300'" alt="{{ character.name }}" />
+    <div class="card-info">
+      <h3>{{ character.name }}</h3>
+      <p [ngClass]="character.house?.toLowerCase()">{{ character.house }}</p>
+    </div>
+  </div>
+</div>
